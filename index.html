@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover our premium organic coffee selection - chemical-free, stomach-friendly, and delicious. Shop our range of specialty coffees today.">
+    <title>CoffeeCraft - Premium Organic Coffee</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Preload hero image -->
+    <link rel="preload" as="image" href="assets/img/hero.webp" fetchpriority="high">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body class="bg-white text-gray-900">
+    <!-- Header -->
+    <header class="fixed w-full bg-white/95 backdrop-blur-sm shadow-sm z-50">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="/" class="text-2xl font-bold text-coffee-800">CoffeeCraft</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#products" class="hover:text-coffee-600 transition-colors">Products</a>
+                <a href="#benefits" class="hover:text-coffee-600 transition-colors">Benefits</a>
+                <a href="#testimonials" class="hover:text-coffee-600 transition-colors">Testimonials</a>
+                <a href="#contact" class="hover:text-coffee-600 transition-colors">Contact</a>
+            </div>
+            <button class="md:hidden" aria-label="Toggle menu">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="pt-24 md:pt-32 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div class="space-y-6">
+                    <h1 class="text-4xl md:text-5xl font-bold text-coffee-900">
+                        USDA Organic Coffee
+                        <span class="block text-coffee-700">99.9% Decaffeinated</span>
+                    </h1>
+                    <p class="text-xl text-gray-600">
+                        Without Harmful Chemicals. That's Gut-Friendly and Tastes Delicious
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#products" class="bg-red-600 text-white px-8 py-3 rounded-lg hover:bg-red-700 transition-colors font-semibold shadow-md">
+                            Shop Now
+                        </a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img 
+                        src="assets/img/hero.webp" 
+                        alt="Premium organic coffee beans" 
+                        class="w-full h-auto rounded-lg shadow-xl"
+                        width="600"
+                        height="400"
+                        fetchpriority="high"
+                        loading="eager"
+                        sizes="(max-width: 640px) 340px, (max-width: 768px) 450px, (max-width: 1024px) 766px, (max-width: 1280px) 1023px, 1200px"
+                    >
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-20 bg-coffee-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Why Choose Our Coffee?</h2>
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="card flex flex-col items-center p-6 text-center">
+                    <img src="assets/icons/benefits-organic.svg" alt="Certified Organic" width="56" height="56" class="mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Certified Organic</h3>
+                    <p class="text-gray-600">Grown without pesticides or chemicals for pure, clean flavor.</p>
+                </div>
+                <div class="card flex flex-col items-center p-6 text-center">
+                    <img src="assets/icons/benefits-water.svg" alt="Swiss Water Process" width="56" height="56" class="mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Swiss Water Decaf</h3>
+                    <p class="text-gray-600">99.9% caffeine-free, using only water—no solvents or toxins.</p>
+                </div>
+                <div class="card flex flex-col items-center p-6 text-center">
+                    <img src="assets/icons/benefits-stomach.svg" alt="Stomach Friendly" width="56" height="56" class="mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Stomach Friendly</h3>
+                    <p class="text-gray-600">Low acid, gentle on digestion, and easy on your stomach.</p>
+                </div>
+                <div class="card flex flex-col items-center p-6 text-center">
+                    <img src="assets/icons/benefits-flavor.svg" alt="Full Flavor" width="56" height="56" class="mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Full Flavor</h3>
+                    <p class="text-gray-600">Rich, bold taste—never bitter or bland, always satisfying.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-20 bg-emerald-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Our Premium Selection</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="card flex flex-col items-center p-6 text-center h-full">
+                    <img src="" data-src="assets/img/coffee1.webp" alt="Organic Medium Roast" width="320" height="220" class="product-image mb-4" loading="lazy">
+                    <h3 class="text-xl font-semibold mb-2">Organic Medium Roast</h3>
+                    <p class="text-gray-600 mb-4 min-h-[48px] flex items-center justify-center">Smooth, balanced, and full-bodied. Perfect for any time of day.</p>
+                    <button class="bg-red-600 text-white px-8 py-3 rounded-lg hover:bg-red-700 transition-colors font-semibold shadow-md w-full order-btn mt-auto" data-product="Organic Medium Roast">Shop Now</button>
+                </div>
+                <div class="card flex flex-col items-center p-6 text-center h-full">
+                    <img src="" data-src="assets/img/coffee2.webp" alt="Swiss Water Decaf" width="320" height="220" class="product-image mb-4" loading="lazy">
+                    <h3 class="text-xl font-semibold mb-2">Swiss Water Decaf</h3>
+                    <p class="text-gray-600 mb-4 min-h-[48px] flex items-center justify-center">99.9% caffeine-free, chemical-free, and bursting with flavor.</p>
+                    <button class="bg-red-600 text-white px-8 py-3 rounded-lg hover:bg-red-700 transition-colors font-semibold shadow-md w-full order-btn mt-auto" data-product="Swiss Water Decaf">Shop Now</button>
+                </div>
+                <div class="card flex flex-col items-center p-6 text-center h-full">
+                    <img src="" data-src="assets/img/coffee3.webp" alt="Dark Roast Espresso" width="320" height="220" class="product-image mb-4" loading="lazy">
+                    <h3 class="text-xl font-semibold mb-2">Dark Roast Espresso</h3>
+                    <p class="text-gray-600 mb-4 min-h-[48px] flex items-center justify-center">Intense, bold, and aromatic. For true coffee lovers.</p>
+                    <button class="bg-red-600 text-white px-8 py-3 rounded-lg hover:bg-red-700 transition-colors font-semibold shadow-md w-full order-btn mt-auto" data-product="Dark Roast Espresso">Shop Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-coffee-200">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">What Our Customers Say</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="card p-6 flex flex-col items-center text-center">
+                    <img src="" data-src="assets/img/user1.webp" alt="Margie H." width="64" height="64" class="mb-4 rounded-full object-cover" loading="lazy">
+                    <p class="text-gray-700 mb-4">“I absolutely love the medium roast! I have heart and digestion issues and had stopped drinking coffee entirely. Lifeboost is the best coffee ever!”</p>
+                    <span class="font-semibold text-coffee-700">Margie H.</span>
+                </div>
+                <div class="card p-6 flex flex-col items-center text-center">
+                    <img src="" data-src="assets/img/user2.webp" alt="Gwen O." width="64" height="64" class="mb-4 rounded-full object-cover" loading="lazy">
+                    <p class="text-gray-700 mb-4">“After some research and trials of other brands, this is by far the best low acid decaf! I have zero stomach upset and I absolutely love the taste.”</p>
+                    <span class="font-semibold text-coffee-700">Gwen O.</span>
+                </div>
+                <div class="card p-6 flex flex-col items-center text-center">
+                    <img src="" data-src="assets/img/user3.webp" alt="Debbie N." width="64" height="64" class="mb-4 rounded-full object-cover" loading="lazy">
+                    <p class="text-gray-700 mb-4">“This Decaf is so good that even my husband can't tell the difference from his regular coffee. It's a winner.”</p>
+                    <span class="font-semibold text-coffee-700">Debbie N.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section id="video" class="py-20 bg-gray-100">
+      <div class="container mx-auto px-4 flex flex-col items-center">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-6">Watch Our Coffee Story</h2>
+        <p class="text-lg text-gray-600 text-center mb-8 max-w-2xl">
+          Discover the passion and craft behind every cup. Watch our short video to see how we bring the best coffee to your table.
+        </p>
+        <div class="relative w-full max-w-2xl aspect-video rounded-xl overflow-hidden shadow-xl group">
+          <button id="load-video-btn" class="absolute inset-0 flex items-center justify-center w-full h-full bg-black/40 hover:bg-black/60 transition-colors z-10" aria-label="Play video">
+            <svg class="w-20 h-20 text-white group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 84 84">
+              <circle cx="42" cy="42" r="42" fill="rgba(0,0,0,0.6)"/>
+              <polygon points="34,28 62,42 34,56" fill="white"/>
+            </svg>
+          </button>
+          <img id="video-thumb" src="https://img.youtube.com/vi/87eb45AYeBE/hqdefault.jpg" alt="Coffee video preview" class="w-full h-full object-cover" loading="lazy">
+          <div id="video-embed" class="hidden w-full h-full"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How We Brew Section -->
+    <section id="how-we-brew" class="py-20 bg-white">
+      <div class="container mx-auto px-4 flex flex-col items-center">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-6">How We Brew</h2>
+        <p class="text-lg text-gray-600 text-center mb-8 max-w-2xl">
+          Every cup of CoffeeCraft is made with care, using only the purest beans and a process that preserves flavor, aroma, and health benefits. Discover the art and science behind our perfect brew.
+        </p>
+        <img 
+          src="" 
+          data-src="assets/img/benefits.webp" 
+          alt="Coffee brewing process" 
+          width="800" 
+          height="600" 
+          class="rounded-lg shadow-xl w-full max-w-3xl h-auto object-cover" 
+          loading="lazy"
+        >
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="cta" class="py-20 bg-coffee-700">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6 text-white">Ready to Experience Premium Coffee?</h2>
+            <p class="text-xl text-coffee-100 mb-8">Join thousands of satisfied customers who've made the switch.</p>
+            <a href="#products" class="bg-red-600 text-white px-8 py-3 rounded-lg hover:bg-red-700 transition-colors inline-block font-semibold shadow-md">
+                Shop Now
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-100 pt-12 pb-6 mt-16 border-t-4 border-gray-800">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div>
+            <span class="text-2xl font-bold text-white">CoffeeCraft</span>
+            <p class="mt-4 text-gray-400 text-sm leading-relaxed">
+              Premium organic coffee, crafted for your health and taste. Sustainably sourced, expertly roasted, and always fresh.
+            </p>
+          </div>
+          <div>
+            <h4 class="font-semibold mb-2 text-white">Quick Links</h4>
+            <ul class="space-y-1 text-gray-100 text-sm">
+              <li><a href="#products" class="hover:underline">Products</a></li>
+              <li><a href="#benefits" class="hover:underline">Benefits</a></li>
+              <li><a href="#testimonials" class="hover:underline">Testimonials</a></li>
+              <li><a href="#how-we-brew" class="hover:underline">How We Brew</a></li>
+              <li><a href="#cta" class="hover:underline">Shop Now</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-semibold mb-2 text-white">Contact</h4>
+            <ul class="space-y-1 text-gray-100 text-sm">
+              <li><span class="text-gray-400">Email:</span> <a href="mailto:info@coffeecraft.com" class="hover:underline">info@coffeecraft.com</a></li>
+              <li><span class="text-gray-400">Phone:</span> <a href="tel:+1234567890" class="hover:underline">+1 234 567 890</a></li>
+              <li><span class="text-gray-400">Address:</span> 123 Coffee St, Sofia, Bulgaria</li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-semibold mb-2 text-white">Follow Us</h4>
+            <div class="flex space-x-4 mt-2">
+              <a href="#" aria-label="Instagram"><img src="assets/icons/instagram.svg" alt="Instagram" width="28" height="28" class="filter invert hover:opacity-80"></a>
+              <a href="#" aria-label="Facebook"><img src="assets/icons/facebook.svg" alt="Facebook" width="28" height="28" class="filter invert hover:opacity-80"></a>
+              <a href="#" aria-label="Twitter"><img src="assets/icons/twitter.svg" alt="Twitter" width="28" height="28" class="filter invert hover:opacity-80"></a>
+            </div>
+          </div>
+        </div>
+        <div class="mt-8 border-t border-gray-800 pt-6 text-center text-gray-500 text-xs">
+          &copy; 2025 CoffeeCraft. All rights reserved.
+        </div>
+      </div>
+    </footer>
+
+    <!-- Demo Popup (hidden by default) -->
+    <div id="demo-popup" class="fixed inset-0 flex items-center justify-center z-50 hidden">
+      <div class="bg-white text-center rounded-xl shadow-2xl px-8 py-6 text-xl font-semibold text-coffee-700 border-2 border-red-600" id="demo-popup-content">
+        This is a demo! No real order will be placed.
+      </div>
+    </div>
+    
+    <!-- Custom JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html> 
