@@ -15,8 +15,7 @@ A modern, responsive, and accessible static landing page for a premium coffee br
 
 ## Live Demo
 
-> After deployment, your site will be available at:
-> `https://YOUR_GITHUB_USERNAME.github.io/YOUR_REPO_NAME/`
+https://dchushkov.github.io/coffeecraft-landing/
 
 ## Project Structure
 
