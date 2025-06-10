@@ -234,7 +234,7 @@ let autoplayInterval = null;
 function renderCurrentTestimonial() {
   const t = testimonials[current];
   document.getElementById('testimonial-current').innerHTML = `
-    <div class="w-full max-w-md mx-auto px-4 flex flex-col items-center text-center min-h-[340px] justify-center">
+    <div class="w-full max-w-md mx-auto px-4 flex flex-col items-center text-center min-h-[340px] justify-center pt-10 pb-10 md:pt-0 md:pb-0">
       <img src="${t.img}" alt="${t.name}" width="80" height="80" class="mb-4 rounded-full object-cover w-20 h-20" loading="lazy">
       <p class="text-gray-700 mb-4">${t.text}</p>
       <span class="font-semibold text-coffee-700">${t.name}</span>
@@ -271,6 +271,19 @@ document.getElementById('testimonial-prev').addEventListener('click', () => {
   resetAutoplay();
 });
 document.getElementById('testimonial-next').addEventListener('click', () => {
+  current = (current + 1) % testimonials.length;
+  renderCurrentTestimonial();
+  resetAutoplay();
+});
+// Mobile arrow events
+const prevMobile = document.getElementById('testimonial-prev-mobile');
+const nextMobile = document.getElementById('testimonial-next-mobile');
+if (prevMobile) prevMobile.addEventListener('click', () => {
+  current = (current - 1 + testimonials.length) % testimonials.length;
+  renderCurrentTestimonial();
+  resetAutoplay();
+});
+if (nextMobile) nextMobile.addEventListener('click', () => {
   current = (current + 1) % testimonials.length;
   renderCurrentTestimonial();
   resetAutoplay();

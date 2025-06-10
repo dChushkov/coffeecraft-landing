@@ -193,13 +193,23 @@
       <div class="container mx-auto px-4">
         <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">What Our Customers Say</h2>
         <div class="relative max-w-4xl mx-auto">
-          <button id="testimonial-prev" class="absolute left-2 top-1/2 -translate-y-1/2 bg-gray-200 hover:bg-gray-300 text-gray-700 rounded-full p-2 shadow transition z-10" aria-label="Previous testimonial">
+          <!-- Absolute стрелки за sm: и нагоре -->
+          <button id="testimonial-prev" class="hidden sm:block absolute left-2 top-1/2 -translate-y-1/2 bg-gray-200 hover:bg-gray-300 text-gray-700 rounded-full p-2 shadow transition z-10" aria-label="Previous testimonial">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" /></svg>
           </button>
-          <div id="testimonial-current"></div>
-          <button id="testimonial-next" class="absolute right-2 top-1/2 -translate-y-1/2 bg-gray-200 hover:bg-gray-300 text-gray-700 rounded-full p-2 shadow transition z-10" aria-label="Next testimonial">
+          <div id="testimonial-current" class="min-h-[260px] md:min-h-[340px] py-8 md:py-0"></div>
+          <button id="testimonial-next" class="hidden sm:block absolute right-2 top-1/2 -translate-y-1/2 bg-gray-200 hover:bg-gray-300 text-gray-700 rounded-full p-2 shadow transition z-10" aria-label="Next testimonial">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>
           </button>
+          <!-- Стрелки под testimonial-а за мобилни -->
+          <div class="flex justify-center gap-6 mt-2 sm:hidden">
+            <button id="testimonial-prev-mobile" class="bg-gray-200 hover:bg-gray-300 text-gray-700 rounded-full p-2 shadow transition z-10" aria-label="Previous testimonial">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" /></svg>
+            </button>
+            <button id="testimonial-next-mobile" class="bg-gray-200 hover:bg-gray-300 text-gray-700 rounded-full p-2 shadow transition z-10" aria-label="Next testimonial">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>
+            </button>
+          </div>
           <div class="flex justify-center mt-6 space-x-2" id="testimonial-dots"></div>
         </div>
       </div>
