@@ -114,4 +114,11 @@ html {
 /* Container max-width */
 .container {
     @apply max-w-7xl mx-auto px-4;
+}
+
+/* Custom Tailwind Extensions */
+@layer utilities {
+  .text-coffee-900 {
+    color: #1a0f0f;
+  }
 } 
